@@ -16,6 +16,14 @@
         <p>Specializing in unforgettable experiences, we offer curated trips to the breathtaking island of Majorca, a hidden gem in the Mediterranean. Whether you crave sun-drenched beaches, charming villages, or thrilling outdoor adventures, our expert team will craft the perfect itinerary tailored just for you.</p>
     </header>
     <nav>
+        <section id="skips">
+            <a class="skip-link" href="#main">Main Content</a>
+            <a class="skip-link" href="#plan-your-trip">Plan Your Trip</a>
+            <a class="skip-link" href="#testimonials">Testimonials</a>
+            <a class="skip-link" href="#about-your-destination">About Your Destination</a>
+            <a class="skip-link" href="#contact-us">Contact Us</a>
+        </section>
+
         <h2>Main Navigation</h2>
         <input type="checkbox" id="dropdown">
         <label for="dropdown"><span></span></label>
@@ -26,10 +34,10 @@
             <li><a href="#">Destinations</a></li>
             <li><a href="#">Inspirations</a></li>
             <li><a href="#">Special</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
         </ul>
     </nav>
-    <main>
+    <main id="main">
         <article>
             <h2>Majorca</h2>
             <section id="intro">
@@ -37,13 +45,13 @@
                 <h3>Introduction</h3>
                 <p>Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.</p>
                 <div>
-                <!--Responsive Image for Art Direction
-                    images/majorca-beach-square-s.jpg
-                    images/majorca-beach-vertical-m.jpg
-                    images/majorca-beach-horizontal-l.jpg
-
-                    404px, 920px, 1280px
-                    -->
+                    <!--Responsive Image for Art Direction | 404px, 920px, 1280px-->
+                    <picture>
+                        <source media="(min-width: 404px)" srcset="images/majorca-beach-square-s.jpg">
+                        <source media="(min-width: 920px)" srcset="images/majorca-beach-vertical-m.jpg">
+                        <source media="(min-width: 1280px)" srcset="images/majorca-beach-horizontal-l.jpg">
+                        <img src="https://unsplash.com/photos/sea-waves-crashing-on-shore-during-sunset-HQJIQjXq1HI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" alt="majorca beach sunset">
+                    </picture>
                     <small>Photo by <a href="https://unsplash.com/@charliefirth?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Charlie Firth</a> on <a href="https://unsplash.com/photos/sea-waves-crashing-on-shore-during-sunset-HQJIQjXq1HI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></small>
                 </div>
             </section>
@@ -91,12 +99,13 @@
                 <h2>Testimonials</h2>
 
                 <section>
-                    <!--Responsive Image for resolution switching
-                        images/miranda-blake-L.png" 
-                        images/miranda-blake-S.png 404w
-                        images/miranda-blake-M.png 920w
-                        images/miranda-blake-L.png 1280w
-                    -->
+                    <!--Responsive Image for resolution switching-->
+                    <picture>
+                        <source media="(min-width: 404px)" srcset="images/miranda-blake-S.png">
+                        <source media="(min-width: 920px)" srcset="images/miranda-blake-M.png">
+                        <source media="(min-width: 1280px)" srcset="images/miranda-blake-L.png">
+                        <img src="" alt="Miranda Blake profile">
+                    </picture>
                         <div>
                         <h3>Miranda Blake</h3>
                         <dl>
@@ -107,12 +116,13 @@
                     </div>
                 </section>
                 <section>
-                    <!--Responsive Image for resolution switching
-                        images/max-winter-L.png
-                        images/max-winter-S.png 404w
-                        images/max-winter-M.png 920w
-                        images/max-winter-L.png 1280w
-                    -->
+                    <!--Responsive Image for resolution switching-->
+                    <picture>
+                        <source media="(min-width: 404px)" srcset="images/max-winter-S.png">
+                        <source media="(min-width: 920px)" srcset="images/max-winter-M.png">
+                        <source media="(min-width: 1280px)" srcset="images/max-winter-L.png">
+                        <img src="" alt="Max Winter profile">
+                    </picture>
                         <div>
                         <h3>Max Winter</h3>
                         <dl>
@@ -123,12 +133,13 @@
                     </div>
                 </section>
                 <section>
-                    <!--Responsive Image for resolution switching
-                        images/ines-villegoes-L.png
-                        images/ines-villegoes-S.png 404w
-                        images/ines-villegoes-M.png 920w
-                        images/ines-villegoes-L.png 1280w 
-                    -->
+                    <!--Responsive Image for resolution switching-->
+                    <picture>
+                        <source media="(min-width: 404px)" srcset="images/ines-villegoes-S.png">
+                        <source media="(min-width: 920px)" srcset="images/ines-villegoes-M.png">
+                        <source media="(min-width: 1280px)" srcset="images/ines-villegoes-L.png">
+                        <img src="" alt="Inés Villegoes profile">
+                    </picture>
                     <div>
                         <h3>Inés Villegoes</h3>
                         <dl>
@@ -139,12 +150,13 @@
                     </div>
                 </section>
                 <section>
-                    <!--Responsive Image for resolution switching
-                        images/carmen-lorenzo-L.png
-                        images/carmen-lorenzo-S.png 404w
-                        images/carmen-lorenzo-M.png 920w
-                        images/carmen-lorenzo-L.png 1280w
-                    -->
+                    <!--Responsive Image for resolution switching-->
+                    <picture>
+                        <source media="(min-width: 404px)" srcset="images/carmen-lorenzo-S.png">
+                        <source media="(min-width: 920px)" srcset="images/carmen-lorenzo-M.png">
+                        <source media="(min-width: 1280px)" srcset="images/carmen-lorenzo-L.png">
+                        <img src="" alt="Carmen Lorenzo profile">
+                    </picture>
                         <div>
                         <h3>Carmen Lorenzo</h3>
                         <dl>
@@ -253,7 +265,7 @@
                 <fieldset id="destination">
                     <legend>Destination<span>*</span></legend>
                     <select id="select-destination" required>
-                        <option>Choose</option>
+                        <option value="">Choose</option>
                         <option>Barcelona</option>
                         <option>Granada</option>
                         <option>Ibiza</option>
@@ -268,7 +280,7 @@
                 <fieldset id="travelTime">
                     <legend>Travel Time<span>*</span></legend>
                     <select id="select-travel-time">
-                        <option>Choose</option>
+                        <option value="">Choose</option>
                         <option>Fall</option>
                         <option>Winter</option>
                         <option>Spring</option>
@@ -276,8 +288,8 @@
                         <option>Flexible</option>
                     </select>
                 </fieldset>
-                <input type="submit" name="submit-btn" id="submit-btn" value="Submit">
-            </form>
+                <input type="submit" name="submit" id="submit" value="Submit">
+                </form>
         </section>
         <section id="legal">
             <h2>Legal</h2>

@@ -92,6 +92,7 @@ picture {
     display: grid;
     place-content: center;
 }
+
 nav {
     grid-row: 1/2;
     text-align:center;
@@ -102,6 +103,24 @@ nav {
     border: 0;
     padding: 1rem;
 }
+
+/*Skip Link Styles*/
+.skip-link{
+    text-decoration: none;
+    background-color:var(--sunset-orange);
+    color:var(--soft-white);
+    padding:0.5rem;
+    border-radius: 0 0 1rem 1rem;
+    left: 5%;
+    position: absolute;
+    transform: translateY(-1000%);
+    transition: transform 0.5s;
+}
+
+.skip-link:focus{
+    transform: translateY(-450%);
+}
+
 a#home {
     font-size: 3em;
     text-decoration: none;
