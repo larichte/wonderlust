@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Laura Richter">
 
     <link rel="stylesheet" href="styles.css">
 
     <title>Wonderlust Travel- Destination Majorca</title>
 </head>
 <body>
-
     <header>
         <h1>Destination Majorca</h1>
         <p>Let Wonderlust Travel help you plan the trip of your dreams!</p>
         <p>Specializing in unforgettable experiences, we offer curated trips to the breathtaking island of Majorca, a hidden gem in the Mediterranean. Whether you crave sun-drenched beaches, charming villages, or thrilling outdoor adventures, our expert team will craft the perfect itinerary tailored just for you.</p>
     </header>
+
     <nav>
             <a class="skip-link" href="#main">Main Content</a>
+            <!-- ??Unneeded skip links?? -->
             <a class="skip-link" href="#plan-your-trip">Plan Your Trip</a>
             <a class="skip-link" href="#testimonials">Testimonials</a>
             <a class="skip-link" href="#about-your-destination">About Your Destination</a>
@@ -228,7 +230,7 @@
     <footer>
         <section id="contact-us">
             <h2>Contact Us <span id="required">(*required)</span></h2>
-            <form>
+            <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
                 <div>
                     <label for="f-name">First Name<span>*</span></label>
                     <input type="text" name="f-name" id="f-name" required>
@@ -264,26 +266,26 @@
                     <legend>Destination<span>*</span></legend>
                     <select id="select-destination" required>
                         <option value="">Choose</option>
-                        <option>Barcelona</option>
-                        <option>Granada</option>
-                        <option>Ibiza</option>
-                        <option>Madrid</option>
-                        <option>Majorca</option>
-                        <option>Seville</option>
-                        <option>Tenerife</option>
-                        <option>Valencia</option>
-                        <option>Other</option>
+                        <option value="barcelona">Barcelona</option>
+                        <option value="granada">Granada</option>
+                        <option value="ibiza">Ibiza</option>
+                        <option value="madrid">Madrid</option>
+                        <option value="majorca">Majorca</option>
+                        <option value="seville">Seville</option>
+                        <option value="tenerife">Tenerife</option>
+                        <option value="valencia">Valencia</option>
+                        <option value="other">Other</option>
                     </select>
                 </fieldset>
                 <fieldset id="travelTime">
                     <legend>Travel Time<span>*</span></legend>
                     <select id="select-travel-time">
                         <option value="">Choose</option>
-                        <option>Fall</option>
-                        <option>Winter</option>
-                        <option>Spring</option>
-                        <option>Summer</option>
-                        <option>Flexible</option>
+                        <option value="fall">Fall</option>
+                        <option value="winter">Winter</option>
+                        <option value="spring">Spring</option>
+                        <option value="summer">Summer</option>
+                        <option value="flexible">Flexible</option>
                     </select>
                 </fieldset>
                 <input type="submit" name="submit" id="submit" value="Submit">
