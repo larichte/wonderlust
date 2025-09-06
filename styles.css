@@ -71,6 +71,7 @@ table {
 }
 html {
     background-image: linear-gradient(to right, #00bfd8, #63ccbf, #9fd5ae, #d0dbaf, #f4e1c1);
+    scroll-behavior: smooth;
 }
 body {
     display: grid;
